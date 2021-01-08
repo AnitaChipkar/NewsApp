@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="title_activity_main">BBC News</string>
+    <string name="title_activity_sport">BBC Sports News</string>
+    <string name="title_activity_about_me">About Me</string>
+    <string name="title_news">News</string>
+    <string name="title_sports">Sports</string>
+    <string name="title_about_me">About Me</string>
+    <string name="title_news_details">News Details</string>
+    <string name="title_sports_details">Sports Details</string>
+    <string name="text_about_me">Hi,This is Anita Chipkar.I have two years of experience in Android Development.</string>
+    <string name="text_developed_by">Developed By,</string>
+    <string name="text_developer_name"> Anita Chipkar </string>
+
+    <!--String Error Network-->
+    <string name="error_network_timeout">Internet Connection Not Found, Try again!</string>
+    <string name="error_server">Server error</string>
+    <string name="error_authentication">Authentication Failure error</string>
+    <string name="error_network">Network error</string>
+    <string name="error_parse">Parsing error</string>
+</resources>

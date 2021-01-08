@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anita.pricify.newsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newschannel.view.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sportschannel.view.SportsActivity"
+            android:label="@string/title_activity_sport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aboutme.AboutMeActivity"
+            android:label="@string/title_about_me"
+            android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anita.pricify.newsapp.newschannel.view.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".newschannel.view.NewsDetails"
+            android:label="@string/title_news_details"
+            android:screenOrientation="portrait">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anita.pricify.newsapp.newschannel.view.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".sportschannel.view.SportsDetailsActivity"
+            android:label="@string/title_sports_details"
+            android:screenOrientation="portrait">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anita.pricify.newsapp.sportschannel.view.SportsActivity"/>
+        </activity>
+
+        <activity android:name=".ReadMoreActivity"
+            android:screenOrientation="portrait">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anita.pricify.newsapp.newschannel.view.MainActivity"/>
+        </activity>
+    </application>
+
+</manifest>
